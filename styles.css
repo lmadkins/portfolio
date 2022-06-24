@@ -57,3 +57,15 @@ a {
 .hide {
   display: none;
 }
+
+#entry-page {
+  display: none;
+}
+
+#bio-page {
+  display: none;
+}
+
+#project-page {
+  display: none;
+}

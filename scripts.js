@@ -1,20 +1,17 @@
 // gets modal box div (note, using class of modal, also has id of modal-box)
-const modal = document.querySelector('.modal')
+// const modal = document.querySelector('.modal')
 
 //modal open button
-const openButton = document.querySelector('#open-button')
+// const openButton = document.querySelector('#open-button')
 
 // modal close button
-const closeButton = document.querySelector('#close-button')
+// const closeButton = document.querySelector('#close-button')
 
-openButton.addEventListener('click', () => modal.classList.remove('hide'))
+// openButton.addEventListener('click', () => modal.classList.remove('hide'))
 //function to open modal
 
-
-closeButton.addEventListener('click', () => modal.classList.add('hide'))
+// closeButton.addEventListener('click', () => modal.classList.add('hide'))
 // function to close modal 
-
-
 
 //close modal by clicking outside of the modal window
 // window.addEventListener('click', () => {
@@ -30,13 +27,39 @@ closeButton.addEventListener('click', () => modal.classList.add('hide'))
 //  }
 // }
 
+////////////////////////////////
+
+
 //ENTRY/CONTACT PAGE
-// tab-menu, hidden/display none
+// tab-menu is hidden/display none
 // only render entry page
 // stretch: animations
 // stretch: email form
+const entryPage = document.querySelector('#entry-page')
+
+//NAVIGATION and TABS
+const tabNav = document.querySelector('#tab-nav')
+const tabViews = document.querySelectorAll('.tab-view')
+const bioPage = document.querySelector('#bio-page')
+const projectPage = document.querySelector('#project-page')
+
+//NAV LINKS
+const bioLink = document.querySelector('#button-to-bio')
+const projectsLink = document.querySelector('#button-to-projects')
+const entryLink = document.querySelector('#button-to-entry')
+
+// NAV BUTTON FUNCIONALITY
+// const showProjects = function () {
+// }
+
+bioLink.addEventListener('click', () => console.log('Bio link clicked'))
+
+projectsLink.addEventListener('click', () => console.log('Projects link clicked'))
+
+entryLink.addEventListener('click', () => console.log('Entry link clicked'))
 
 //BIO PAGE
+
 // entry page, project page are hidden/display none
 // render nav, bio-page
 // header fixed on scroll if needed
@@ -50,3 +73,11 @@ closeButton.addEventListener('click', () => modal.classList.add('hide'))
 // header fixed on scroll if needed
 // modal for each project card
 // stretch: animations
+
+// function loadEntry() {
+//   entryPage.classList.remove('hide')
+//   bioPage.classList.add('hide')
+//   projectPage.classList.add('hide')
+//   console.log('entry page loaded')
+// }
+// loadEntry()
