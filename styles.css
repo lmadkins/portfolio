@@ -17,6 +17,7 @@ button {
 
 a {
   text-decoration: none;
+  
 }
 
 .tab-view {
@@ -25,14 +26,34 @@ a {
   text-align: center;
 }
 
+/* PROJECTS PAGE */
 .project-card {
-  margin: 0 auto;
+  margin: 30px auto;
+  min-height: 90vh;
   /* max-width: 100vh; */
   text-align: center;
 }
 
+.project-links a {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid gray;
+  background-color: rgb(255, 254, 254);
+  border-radius: 1px;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.project-card p {
+  max-width: 500px;
+  margin: 20px auto;
+  /* text-align: center; */
+}
+
+/* //////////////////// */
+
 .modal {
-  /* display: none; */
+  /* display: none;
   position: fixed;
   z-index: 1;
   /* left: 0;
@@ -52,7 +73,7 @@ a {
   border: 1px solid black;
   padding: 10px;
   text-align: center;
-}
+} 
 
 .hide {
   display: none;
