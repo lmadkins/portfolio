@@ -1,3 +1,36 @@
+body {
+  margin: 0 auto;
+  max-width: 100vh;
+}
+
+nav {
+  text-align: center;
+  background-color: rgb(56, 56, 56);
+  padding: 20px;
+}
+
+button {
+  border-radius: 1;
+  padding: 7px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tab-view {
+  border: 2px solid gray;
+  background-color: rgb(203, 203, 203);
+  text-align: center;
+}
+
+.project-card {
+  margin: 0 auto;
+  /* max-width: 100vh; */
+  text-align: center;
+}
+
 .modal {
   /* display: none; */
   position: fixed;
@@ -20,21 +53,6 @@
   padding: 10px;
   text-align: center;
 }
-
-button {
-  border: 1px solid black;
-  border-radius: 4px;
-  /* background-color: blueviolet; */
-  padding: 3px;
-  font-size: 14px;
-  /* float: right; */
-  /* margin: 0 auto; */
-}
-
-/* .close-button {
-
-}
-pseudoclass effects to style? */
 
 .hide {
   display: none;
