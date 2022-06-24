@@ -29,3 +29,24 @@ closeButton.addEventListener('click', () => modal.classList.add('hide'))
 //   modal.classList.add('hide')
 //  }
 // }
+
+//ENTRY/CONTACT PAGE
+// tab-menu, hidden/display none
+// only render entry page
+// stretch: animations
+// stretch: email form
+
+//BIO PAGE
+// entry page, project page are hidden/display none
+// render nav, bio-page
+// header fixed on scroll if needed
+// resume modal
+// stretch: animations
+// stretch: email form
+
+// PROJECT PAGE
+// entry page, bio page are hidden/display none
+// render nav, bio-page
+// header fixed on scroll if needed
+// modal for each project card
+// stretch: animations

@@ -16,7 +16,7 @@ VIEWS:
 JS user interaction elements:
 - Tab navigation menu to display pages
 - Modal for viewing projects, and for resume
-- Sticky nav menu
+- Tab nav menu fixed at top on scroll
 
 STRETCH GOALS
 - more advanced styling
@@ -24,9 +24,9 @@ STRETCH GOALS
   - pseudoclasses
   - color 
 - social media buttons/icons for GH & LI
-- Contact link to email me
+- Contact form to email me
 fixed nav
-
+- improved accessibility features
 - more detailed project information
     - more photos, description
     - carousel or similar of images in project modal views
