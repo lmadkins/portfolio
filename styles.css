@@ -17,17 +17,33 @@ button {
 
 a {
   text-decoration: none;
-  
 }
 
 .tab-view {
   border: 2px solid gray;
-  background-color: rgb(203, 203, 203);
+
   text-align: center;
+
+  /* adjust these with media queries later */
+  max-width: 80vw;
+  margin: 100px auto;
 }
+
+/* ENTRY PAGE */
+.entry-page-button {
+  display: block;
+  margin: 20px auto;
+}
+#entry-social-links {
+  display: block;
+  margin: 20px;
+}
+
 
 /* PROJECTS PAGE */
 .project-card {
+  /* border: 2px solid gray;
+  background-color: rgb(203, 203, 203); */
   margin: 30px auto;
   min-height: 90vh;
   /* max-width: 100vh; */
@@ -50,7 +66,28 @@ a {
   /* text-align: center; */
 }
 
-/* //////////////////// */
+
+.hide {
+  display: none;
+}
+
+
+
+/* TEST AREA //////////////////// */
+
+
+/* #entry-page {
+  display: none;
+} 
+
+ #bio-page {
+  display: none;
+} 
+
+ #project-page {
+  display: none;
+} */
+
 
 .modal {
   /* display: none;
@@ -74,19 +111,3 @@ a {
   padding: 10px;
   text-align: center;
 } 
-
-.hide {
-  display: none;
-}
-
-/* #entry-page {
-  display: none;
-} */
-
-/* #bio-page {
-  display: none;
-} */
-
-/* #project-page {
-  display: none;
-} */

@@ -44,28 +44,15 @@ const bioPage = document.querySelector('#bio-page')
 const projectPage = document.querySelector('#project-page')
 
 //NAV LINKS
-const bioLink = document.querySelector('#button-to-bio')
-const projectsLink = document.querySelector('#button-to-projects')
-const entryLink = document.querySelector('#button-to-entry')
+const navBio = document.querySelector('#nav-bio-link')
+const navProjects = document.querySelector('#nav-projects-link')
+const navEntry = document.querySelector('#nav-entry-link')
 
-// NAV BUTTON FUNCIONALITY
-// const showProjects = function () {
-// }
+// ENTRY BUTTON LINKS
+const entryBio = document.querySelector('#entry-bio-link')
 
-bioLink.addEventListener('click', () => {
-  loadBio()
-  console.log('Bio link clicked')
-})
+const entryProjects = document.querySelector('#entry-projects-link')
 
-projectsLink.addEventListener('click', () => {
-  loadProjects()
-  console.log('Projects link clicked')
-})
-
-entryLink.addEventListener('click', () => {
-  loadEntry()
-  console.log('Entry link clicked')
-})
 
 
 const loadEntry = function () {
@@ -75,7 +62,7 @@ const loadEntry = function () {
   // tabNav.classList.add('hide')
   console.log('entry page loaded')
 }
-loadEntry()
+
 
 const loadBio = function () {
   entryPage.classList.add('hide')
@@ -84,12 +71,43 @@ const loadBio = function () {
   console.log('bio page loaded')
 }
 
+
 const loadProjects = function () {
   entryPage.classList.add('hide')
   bioPage.classList.add('hide')
   projectPage.classList.remove('hide')
   console.log('projects page loaded')
 }
+
+
+entryBio.addEventListener('click', () => {
+  loadBio()
+  console.log('Bio link clicked')
+})
+
+entryProjects.addEventListener('click', () => {
+  loadProjects()
+  console.log('Projects link clicked')
+})
+
+// NAV EVENT LISTENERS
+navBio.addEventListener('click', () => {
+  loadBio()
+  console.log('Bio link clicked')
+})
+
+navProjects.addEventListener('click', () => {
+  loadProjects()
+  console.log('Projects link clicked')
+})
+
+navEntry.addEventListener('click', () => {
+  loadEntry()
+  console.log('Entry link clicked')
+})
+
+
+
 
 //BIO PAGE
 
