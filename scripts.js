@@ -52,11 +52,44 @@ const entryLink = document.querySelector('#button-to-entry')
 // const showProjects = function () {
 // }
 
-bioLink.addEventListener('click', () => console.log('Bio link clicked'))
+bioLink.addEventListener('click', () => {
+  loadBio()
+  console.log('Bio link clicked')
+})
 
-projectsLink.addEventListener('click', () => console.log('Projects link clicked'))
+projectsLink.addEventListener('click', () => {
+  loadProjects()
+  console.log('Projects link clicked')
+})
 
-entryLink.addEventListener('click', () => console.log('Entry link clicked'))
+entryLink.addEventListener('click', () => {
+  loadEntry()
+  console.log('Entry link clicked')
+})
+
+
+const loadEntry = function () {
+  entryPage.classList.remove('hide')
+  bioPage.classList.add('hide')
+  projectPage.classList.add('hide')
+  // tabNav.classList.add('hide')
+  console.log('entry page loaded')
+}
+loadEntry()
+
+const loadBio = function () {
+  entryPage.classList.add('hide')
+  bioPage.classList.remove('hide')
+  projectPage.classList.add('hide')
+  console.log('bio page loaded')
+}
+
+const loadProjects = function () {
+  entryPage.classList.add('hide')
+  bioPage.classList.add('hide')
+  projectPage.classList.remove('hide')
+  console.log('projects page loaded')
+}
 
 //BIO PAGE
 
@@ -74,10 +107,3 @@ entryLink.addEventListener('click', () => console.log('Entry link clicked'))
 // modal for each project card
 // stretch: animations
 
-// function loadEntry() {
-//   entryPage.classList.remove('hide')
-//   bioPage.classList.add('hide')
-//   projectPage.classList.add('hide')
-//   console.log('entry page loaded')
-// }
-// loadEntry()
