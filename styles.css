@@ -1,0 +1,41 @@
+.modal {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  /* left: 0;
+  top: 0; */
+  width: 50%;
+  height: 50%;
+  background-color: rgb(180, 159, 212);
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 5px
+}
+
+.modal-content {
+  background-color: rgb(216, 200, 246);
+  width: 75%
+  margin: 50% auto;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 4px;
+  /* background-color: blueviolet; */
+  padding: 3px;
+  font-size: 14px;
+  /* float: right; */
+  /* margin: 0 auto; */
+}
+
+/* .close-button {
+
+}
+pseudoclass effects to style? */
+
+.hide {
+  display: none;
+}
