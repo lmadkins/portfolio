@@ -28,7 +28,7 @@
 // }
 
 ////////////////////////////////
-
+window.onload = () => loadEntry()
 
 //ENTRY/CONTACT PAGE
 // tab-menu is hidden/display none
@@ -105,6 +105,7 @@ navEntry.addEventListener('click', () => {
   loadEntry()
   console.log('Entry link clicked')
 })
+
 
 
 
