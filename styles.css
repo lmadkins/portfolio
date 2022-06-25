@@ -5,7 +5,7 @@ body {
 
 nav {
   text-align: center;
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
   padding: 20px;
   position: fixed;
   top: 0;
@@ -30,6 +30,22 @@ a {
   /* adjust these with media queries later */
   max-width: 80vw;
   margin: 100px auto;
+}
+
+#tab-nav {
+  display: none;
+}
+
+#entry-page {
+  display: none;
+}
+
+#bio-page {
+  display: none;
+}
+
+#project-page {
+  display: none;
 }
 
 /* ENTRY PAGE */
@@ -74,9 +90,7 @@ a {
   display: none;
 }
 
-
-
-/* TEST AREA //////////////////// */
+/* ///////// TEST AREA //////////// */
 
 
 /* #entry-page {
@@ -93,22 +107,24 @@ a {
 
 
 .modal {
-  /* display: none;
-  position: fixed;
+  display: none;
+  /* position: fixed; */
   z-index: 1;
-  /* left: 0;
-  top: 0; */
+  overflow: auto;
+  margin: 0 auto;
   width: 50%;
   height: 50%;
-  background-color: rgb(180, 159, 212);
+  /* background-color: rgb(180, 159, 212); */
+  background-color: rgba(0,0,0,0.4);
   border: 2px solid black;
   border-radius: 4px;
-  padding: 5px
+  /* padding: 5px */
 }
 
 .modal-content {
   background-color: rgb(216, 200, 246);
-  width: 75%
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%
   margin: 50% auto;
   border: 1px solid black;
   padding: 10px;

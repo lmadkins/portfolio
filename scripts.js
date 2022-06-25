@@ -1,47 +1,47 @@
-// gets modal box div (note, using class of modal, also has id of modal-box)
-// const modal = document.querySelector('.modal')
-
-//modal open button
-// const openButton = document.querySelector('#open-button')
-
-// modal close button
-// const closeButton = document.querySelector('#close-button')
-
-// openButton.addEventListener('click', () => modal.classList.remove('hide'))
-//function to open modal
-
-// closeButton.addEventListener('click', () => modal.classList.add('hide'))
-// function to close modal 
-
-//close modal by clicking outside of the modal window
-// window.addEventListener('click', () => {
-//   console.log('hi')
-//   if (event.target !== modal) {
-//     modal.classList.add('hide')
-// }})
-
-// maybe make as a separate function and call it here?
-// function hideModal(event) {
-//  if (event.target !== modal) {
-//   modal.classList.add('hide')
-//  }
-// }
-
-////////////////////////////////
 window.onload = () => loadEntry()
 
-//ENTRY/CONTACT PAGE
-// tab-menu is hidden/display none
-// only render entry page
-// stretch: animations
-// stretch: email form
-const entryPage = document.querySelector('#entry-page')
+const modalBox = document.getElementById('modal-box')
+
+//modal open button
+const openButton = document.getElementById('open-modal')
+
+// modal close button
+const closeButton = document.getElementById('close-button')
+
+
+// function to open button and change CSS property from display none to display block
+const openModal = () => {
+  modalBox.style.display = 'block'
+}
+
+
+// function to close button and change CSS property from display block to display none
+const closeModal = () => {
+  modalBox.style.display = 'none'
+}
+
+//event listener to open modal
+openButton.addEventListener('click', openModal)
+//event listener to close modal
+closeButton.addEventListener('click', closeModal)
+
+
+
+
+
+////////////////////////////////
+
+
+
+// const entryPage = document.querySelector('#entry-page')
+const entryPage = document.getElementById('entry-page')
 
 //NAVIGATION and TABS
 const tabNav = document.querySelector('#tab-nav')
 const tabViews = document.querySelectorAll('.tab-view')
-const bioPage = document.querySelector('#bio-page')
-const projectPage = document.querySelector('#project-page')
+// const bioPage = document.querySelector('#bio-page')
+const bioPage = document.getElementById('bio-page')
+const projectPage = document.getElementById('project-page')
 
 //NAV LINKS
 const navBio = document.querySelector('#nav-bio-link')
@@ -53,29 +53,34 @@ const entryBio = document.querySelector('#entry-bio-link')
 
 const entryProjects = document.querySelector('#entry-projects-link')
 
+//ENTRY/CONTACT PAGE
+// stretch: animations
+// stretch: email form
 
 
 const loadEntry = function () {
-  entryPage.classList.remove('hide')
-  bioPage.classList.add('hide')
-  projectPage.classList.add('hide')
-  // tabNav.classList.add('hide')
+  tabNav.style.display = 'none'
+  entryPage.style.display = 'block'
+  bioPage.style.display = 'none'
+  projectPage.style.display = 'none'
   console.log('entry page loaded')
 }
 
 
 const loadBio = function () {
-  entryPage.classList.add('hide')
-  bioPage.classList.remove('hide')
-  projectPage.classList.add('hide')
+  tabNav.style.display = 'block'
+  entryPage.style.display = 'none'
+  bioPage.style.display = 'block'
+  projectPage.style.display = 'none'
   console.log('bio page loaded')
 }
 
 
 const loadProjects = function () {
-  entryPage.classList.add('hide')
-  bioPage.classList.add('hide')
-  projectPage.classList.remove('hide')
+  tabNav.style.display = 'block'
+  entryPage.style.display = 'none'
+  bioPage.style.display = 'none'
+  projectPage.style.display = 'block'
   console.log('projects page loaded')
 }
 
