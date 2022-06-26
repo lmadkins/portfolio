@@ -85,6 +85,9 @@ a {
   /* text-align: center; */
 }
 
+#project-card-1 {
+
+}
 
 .hide {
   display: none;
@@ -92,18 +95,6 @@ a {
 
 /* ///////// TEST AREA //////////// */
 
-
-/* #entry-page {
-  display: none;
-} 
-
- #bio-page {
-  display: none;
-} 
-
- #project-page {
-  display: none;
-} */
 
 
 .modal {

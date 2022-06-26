@@ -1,5 +1,6 @@
 window.onload = () => loadEntry()
 
+// MODAL
 const modalBox = document.getElementById('modal-box')
 
 //modal open button
@@ -9,25 +10,17 @@ const openButton = document.getElementById('open-modal')
 const closeButton = document.getElementById('close-button')
 
 
+
+
+// RESUME MODAL FUNCTIONS
 // function to open button and change CSS property from display none to display block
 const openModal = () => {
   modalBox.style.display = 'block'
 }
-
-
 // function to close button and change CSS property from display block to display none
 const closeModal = () => {
   modalBox.style.display = 'none'
 }
-
-//event listener to open modal
-openButton.addEventListener('click', openModal)
-//event listener to close modal
-closeButton.addEventListener('click', closeModal)
-
-
-
-
 
 ////////////////////////////////
 
@@ -111,6 +104,13 @@ navEntry.addEventListener('click', () => {
   console.log('Entry link clicked')
 })
 
+// RESUME MODAL
+//event listener to open modal
+openButton.addEventListener('click', openModal)
+
+//event listener to close modal
+closeButton.addEventListener('click', closeModal)
+
 
 
 
@@ -130,4 +130,42 @@ navEntry.addEventListener('click', () => {
 // header fixed on scroll if needed
 // modal for each project card
 // stretch: animations
+
+
+//PROJECT MODAL
+const projectModal =  document.querySelectorAll('.project-modal')
+const projectClose = document.querySelectorAll('.project-modal-close')
+
+const projectExpand =  document.querySelectorAll('.project-expand')
+
+// projectExpand.forEach(element => {
+// element.addEventListener('click', () => projectExpand('project-1-modal'))
+// projectModal.style.display = 'block'
+// })
+
+const openProject = () => {
+  // modalBox.style.display = 'block'
+//   projectExpand.forEach(element => {
+// element.addEventListener('click', () => projectExpand('project-1-modal'))
+// projectModal.style.display = 'block'
+// })
+for (let i = 0; i < projectExpand.length; i++) {
+  projectExpand[i].addEventListener('click', 
+  () => {
+    projectModal.style.display = 'block'
+  })
+}
+}
+// PROJECTS MODAL
+
+
+
+//PROJECT MODAL FUNCTIONS
+// const openProject = () => {
+//   projectModal.style.display = 'block'
+// }
+const closeProject = () => {
+  projectClose.style.display = 'none'
+}
+
 
