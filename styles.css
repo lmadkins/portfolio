@@ -106,7 +106,7 @@ a {
 
 
 /* RESUME MODAL */
-.modal {
+.modal, .project-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -163,6 +163,24 @@ iframe {
 .project-card p {
   max-width: 500px;
   margin: 20px auto;
+}
+
+/* PROJECT MODAL */
+.project-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); 
+}
+
+.modal-content {
+  background-color: #F7F3EF;
 }
 
 

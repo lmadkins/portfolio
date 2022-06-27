@@ -9,9 +9,6 @@ const openResume = document.getElementById('open-resume')
 // close button
 const closeResume = document.getElementById('close-resume')
 
-
-
-
 // RESUME MODAL FUNCTIONS
 // function to open button and change CSS property from display none to display block
 const openResumeModal = () => {
@@ -23,9 +20,26 @@ const closeResumeModal = () => {
 }
 
 ////////////////////////////////
+// PROJECT MODAL
+const projectModal = document.getElementById('card-1-modal')
 
+//open button
+const openProject = document.getElementById('open-project')
+// const openProject = document.querySelectorAll('open-project')
 
+//close button
+const closeProject = document.getElementById('project-close')
 
+// PROJECT MODAL FUNCTIONS
+const openProjectModal = () => {
+  projectModal.style.display = 'block'
+}
+
+const closeProjectModal = () => {
+  projectModal.style.display = 'none'
+}
+
+////////////////////////////////
 // const entryPage = document.querySelector('#entry-page')
 const entryPage = document.getElementById('entry-page')
 
@@ -50,7 +64,7 @@ const entryProjects = document.querySelector('#entry-projects-link')
 // stretch: animations
 // stretch: email form
 
-
+////////////////////////////////
 const loadEntry = function () {
   tabNav.style.display = 'none'
   entryPage.style.display = 'block'
@@ -59,7 +73,6 @@ const loadEntry = function () {
   console.log('entry page loaded')
 }
 
-
 const loadBio = function () {
   tabNav.style.display = 'block'
   entryPage.style.display = 'none'
@@ -67,7 +80,6 @@ const loadBio = function () {
   projectPage.style.display = 'none'
   console.log('bio page loaded')
 }
-
 
 const loadProjects = function () {
   tabNav.style.display = 'block'
@@ -78,6 +90,8 @@ const loadProjects = function () {
 }
 
 
+////////////////////////////////
+// ENTRY EVENT LISTENERS
 entryBio.addEventListener('click', () => {
   loadBio()
   console.log('Bio link clicked')
@@ -104,7 +118,8 @@ navEntry.addEventListener('click', () => {
   console.log('Entry link clicked')
 })
 
-// RESUME MODAL
+
+// RESUME MODAL EVENT LISTENERS
 //event listener to open resume modal
 openResume.addEventListener('click', openResumeModal)
 
@@ -112,8 +127,15 @@ openResume.addEventListener('click', openResumeModal)
 closeResume.addEventListener('click', closeResumeModal)
 
 
+// RESUME MODAL EVENT LISTENERS
+//event listener to open modal
+openProject.addEventListener('click', openProjectModal)
 
+//event listener to close modal
+closeProject.addEventListener('click', closeProjectModal)
 
+////////////////////////////////
+//EXPERIMENTAL AREA
 
 //BIO PAGE
 
@@ -133,16 +155,17 @@ closeResume.addEventListener('click', closeResumeModal)
 
 
 //PROJECT MODAL
-const projectModal =  document.querySelectorAll('.project-modal')
-const projectClose = document.querySelectorAll('.project-modal-close')
+// const projectModal =  document.querySelectorAll('.project-modal')
+// const projectClose = document.querySelectorAll('.project-modal-close')
 
-const projectExpand =  document.querySelectorAll('.project-expand')
+// const projectExpand =  document.querySelectorAll('.project-expand')
 
 // projectExpand.forEach(element => {
 // element.addEventListener('click', () => projectExpand('project-1-modal'))
 // projectModal.style.display = 'block'
 // })
 
+/* 
 const openProject = () => {
   // modalBox.style.display = 'block'
 //   projectExpand.forEach(element => {
@@ -153,9 +176,9 @@ for (let i = 0; i < projectExpand.length; i++) {
   projectExpand[i].addEventListener('click', 
   () => {
     projectModal.style.display = 'block'
-  })
-}
-}
+//   })
+// }
+// }
 // PROJECTS MODAL
 
 
@@ -166,6 +189,6 @@ for (let i = 0; i < projectExpand.length; i++) {
 // }
 const closeProject = () => {
   projectClose.style.display = 'none'
-}
+// }
 
-
+*/
