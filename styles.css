@@ -206,3 +206,44 @@ iframe {
 .hide {
   display: none;
 }
+
+@media only screen and (max-width: 480px) {
+ nav {
+  max-height: 20vh;
+  padding: 10px;
+ }
+  .tab-link {
+    width: 30%;
+    min-height: 100%;
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+    background-color: #383838;
+    color: #F4F4F4;
+    
+  }
+
+  .tab-link:hover {
+    background-color: #F7F3EF;
+    color: black;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  #bio-page {
+    max-width: 95vh;
+    margin-top: 12vh;
+    /* background-color: red; */
+  }
+  #bio-page img {
+    max-width: 200px;
+    margin-top: 10px;
+    /* transition: 0.3s; */
+  }
+
+  #bio-social-links {
+    padding: 0;
+  }
+}
