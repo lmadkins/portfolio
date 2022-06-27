@@ -21,24 +21,30 @@ const closeResumeModal = () => {
 
 ////////////////////////////////
 // PROJECT MODAL
-const projectModal = document.getElementById('card-1-modal')
+const project1Modal = document.getElementById('project-1-modal')
 
 //open button
-const openProject = document.getElementById('open-project')
-// const openProject = document.querySelectorAll('open-project')
+
+ const openProject1Modal = document.getElementById('open-project-1')
+
+// .onclick = function(projectModal) {
+//   projectModal.style.display = 'block'
+// }
 
 //close button
-const closeProject = document.getElementById('project-close')
+const closeProject1Modal = document.getElementById('close-project-1')
 
 // PROJECT MODAL FUNCTIONS
-const openProjectModal = () => {
-  projectModal.style.display = 'block'
+const openProject1 = () => {
+  project1Modal.style.display = 'block'
 }
 
-const closeProjectModal = () => {
-  projectModal.style.display = 'none'
+const closeProject1 = () => {
+  project1Modal.style.display = 'none'
 }
 
+
+document.querySelectorAll('#open-project')
 ////////////////////////////////
 // const entryPage = document.querySelector('#entry-page')
 const entryPage = document.getElementById('entry-page')
@@ -129,10 +135,10 @@ closeResume.addEventListener('click', closeResumeModal)
 
 // RESUME MODAL EVENT LISTENERS
 //event listener to open modal
-openProject.addEventListener('click', openProjectModal)
+openProject1Modal.addEventListener('click', openProject1)
 
 //event listener to close modal
-closeProject.addEventListener('click', closeProjectModal)
+closeProject1Modal.addEventListener('click', closeProject1)
 
 ////////////////////////////////
 //EXPERIMENTAL AREA
