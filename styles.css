@@ -98,7 +98,7 @@ a {
 
 #bio-page img {
   border-radius: 3px;
-  max-width: 350px;
+  max-width: 300px;
 
 }
 
@@ -166,9 +166,6 @@ iframe {
   background-color: rgba(0,0,0,0.5); 
 }
 
-.modal-content {
- 
-}
 
 
 /* PROJECTS PAGE */
@@ -199,8 +196,6 @@ iframe {
   max-width: 500px;
   margin: 20px auto;
 }
-
-
 
 /* DISPLAY NONES AND HIDE CLASS */
 
@@ -245,7 +240,7 @@ iframe {
     background-color: #ebebeb;
     color: black;
   }
-  
+
   h1 {
     font-size: 40px;
     margin: 0 auto;
