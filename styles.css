@@ -12,8 +12,12 @@ nav {
   top: 0;
   left: 0;
   padding: 20px;
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
   text-align: center;
+}
+
+.dark-nav {
+  background-color: rgb(56, 56, 56);
 }
 
 button {

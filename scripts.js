@@ -99,11 +99,10 @@ const entryProjects = document.querySelector('#entry-projects-link')
 
 ////////////////////////////////
 const loadEntry = function () {
-  tabNav.style.display = 'none'
+  // tabNav.style.display = 'none'
   entryPage.style.display = 'block'
   bioPage.style.display = 'none'
   projectPage.style.display = 'none'
-  console.log('entry page loaded')
 }
 
 const loadBio = function () {
@@ -111,7 +110,6 @@ const loadBio = function () {
   entryPage.style.display = 'none'
   bioPage.style.display = 'block'
   projectPage.style.display = 'none'
-  console.log('bio page loaded')
 }
 
 const loadProjects = function () {
@@ -119,7 +117,6 @@ const loadProjects = function () {
   entryPage.style.display = 'none'
   bioPage.style.display = 'none'
   projectPage.style.display = 'block'
-  console.log('projects page loaded')
 }
 
 
@@ -127,29 +124,26 @@ const loadProjects = function () {
 // ENTRY EVENT LISTENERS
 entryBio.addEventListener('click', () => {
   loadBio()
-  console.log('Bio link clicked')
 })
 
 entryProjects.addEventListener('click', () => {
   loadProjects()
-  console.log('Projects link clicked')
 })
 
 // NAV EVENT LISTENERS
+
 navBio.addEventListener('click', () => {
   loadBio()
-  console.log('Bio link clicked')
 })
 
 navProjects.addEventListener('click', () => {
   loadProjects()
-  console.log('Projects link clicked')
 })
 
 navEntry.addEventListener('click', () => {
   loadEntry()
-  console.log('Entry link clicked')
 })
+
 
 
 // RESUME MODAL EVENT LISTENERS
