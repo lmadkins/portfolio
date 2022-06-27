@@ -1,25 +1,25 @@
 window.onload = () => loadEntry()
 
-// MODAL
-const modalBox = document.getElementById('modal-box')
+// RESUME MODAL
+const resumeModal = document.getElementById('resume-modal')
 
-//modal open button
-const openButton = document.getElementById('open-modal')
+//open button
+const openResume = document.getElementById('open-resume')
 
-// modal close button
-const closeButton = document.getElementById('close-button')
+// close button
+const closeResume = document.getElementById('close-resume')
 
 
 
 
 // RESUME MODAL FUNCTIONS
 // function to open button and change CSS property from display none to display block
-const openModal = () => {
-  modalBox.style.display = 'block'
+const openResumeModal = () => {
+  resumeModal.style.display = 'block'
 }
 // function to close button and change CSS property from display block to display none
-const closeModal = () => {
-  modalBox.style.display = 'none'
+const closeResumeModal = () => {
+  resumeModal.style.display = 'none'
 }
 
 ////////////////////////////////
@@ -105,11 +105,11 @@ navEntry.addEventListener('click', () => {
 })
 
 // RESUME MODAL
-//event listener to open modal
-openButton.addEventListener('click', openModal)
+//event listener to open resume modal
+openResume.addEventListener('click', openResumeModal)
 
-//event listener to close modal
-closeButton.addEventListener('click', closeModal)
+//event listener to close resume modal
+closeResume.addEventListener('click', closeResumeModal)
 
 
 
