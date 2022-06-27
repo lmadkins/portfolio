@@ -20,31 +20,58 @@ const closeResumeModal = () => {
 }
 
 ////////////////////////////////
-// PROJECT MODAL
+// PROJECT MODALS
+
+//PROJECT 1
 const project1Modal = document.getElementById('project-1-modal')
 
 //open button
-
  const openProject1Modal = document.getElementById('open-project-1')
-
-// .onclick = function(projectModal) {
-//   projectModal.style.display = 'block'
-// }
 
 //close button
 const closeProject1Modal = document.getElementById('close-project-1')
 
-// PROJECT MODAL FUNCTIONS
+//PROJECT 2
+const project2Modal = document.getElementById('project-2-modal')
+
+const openProject2Modal = document.getElementById('open-project-2')
+
+const closeProject2Modal = document.getElementById('close-project-2')
+
+
+//PROJECT 3
+const project3Modal = document.getElementById('project-3-modal')
+
+const openProject3Modal = document.getElementById('open-project-3')
+
+const closeProject3Modal = document.getElementById('close-project-3')
+
+// PROJECT 1 MODAL FUNCTIONS
 const openProject1 = () => {
   project1Modal.style.display = 'block'
 }
-
 const closeProject1 = () => {
   project1Modal.style.display = 'none'
 }
 
+//PROJECT 2 MODAL FUNCTIONS
+const openProject2 = () => {
+  project2Modal.style.display = 'block'
+}
 
-document.querySelectorAll('#open-project')
+const closeProject2 = () => {
+  project2Modal.style.display = 'none'
+}
+
+//PROJECT 3 MODAL FUNCTIONS
+const openProject3 = () => {
+  project3Modal.style.display = 'block'
+}
+
+const closeProject3 = () => {
+  project3Modal.style.display = 'none'
+}
+
 ////////////////////////////////
 // const entryPage = document.querySelector('#entry-page')
 const entryPage = document.getElementById('entry-page')
@@ -133,12 +160,26 @@ openResume.addEventListener('click', openResumeModal)
 closeResume.addEventListener('click', closeResumeModal)
 
 
-// RESUME MODAL EVENT LISTENERS
+// PROJECT MODAL EVENT LISTENERS
+
+// PROJECT 1
 //event listener to open modal
 openProject1Modal.addEventListener('click', openProject1)
 
 //event listener to close modal
 closeProject1Modal.addEventListener('click', closeProject1)
+
+// PROJECT 2
+openProject2Modal.addEventListener('click', openProject2)
+
+closeProject2Modal.addEventListener('click', closeProject2)
+
+// PROJECT 3
+
+openProject3Modal.addEventListener('click', openProject3)
+
+closeProject3Modal.addEventListener('click', closeProject3)
+
 
 ////////////////////////////////
 //EXPERIMENTAL AREA
