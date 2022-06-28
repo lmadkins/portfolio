@@ -26,7 +26,7 @@ const closeResumeModal = () => {
 const project1Modal = document.getElementById('project-1-modal')
 
 //open button
- const openProject1Modal = document.getElementById('open-project-1')
+const openProject1Modal = document.getElementById('open-project-1')
 
 //close button
 const closeProject1Modal = document.getElementById('close-project-1')
@@ -93,11 +93,11 @@ const entryBio = document.querySelector('#entry-bio-link')
 
 const entryProjects = document.querySelector('#entry-projects-link')
 
-//ENTRY/CONTACT PAGE
-// stretch: animations
-// stretch: email form
+// SCROLL TO TOP BUTTON
+const topButton = document.getElementById('top-button')
 
 ////////////////////////////////
+// FUNCTIONS
 const loadEntry = function () {
   // tabNav.style.display = 'none'
   entryPage.style.display = 'block'
@@ -119,6 +119,20 @@ const loadProjects = function () {
   projectPage.style.display = 'block'
 }
 
+// SCROLL TO TOP BUTTON
+function scrollButtonFunction() {
+  if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
+    topButton.style.display = "block"
+  }  else {
+    topButton.style.display = "none"
+  }
+}
+
+// scroll to the top of the button when clicked
+function clickToTop () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 ////////////////////////////////
 // ENTRY EVENT LISTENERS
@@ -147,29 +161,24 @@ navEntry.addEventListener('click', () => {
 
 
 // RESUME MODAL EVENT LISTENERS
-//event listener to open resume modal
 openResume.addEventListener('click', openResumeModal)
-
-//event listener to close resume modal
 closeResume.addEventListener('click', closeResumeModal)
 
 
 // PROJECT MODAL EVENT LISTENERS
 
 // PROJECT 1
-//event listener to open modal
 openProject1Modal.addEventListener('click', openProject1)
-
-//event listener to close modal
 closeProject1Modal.addEventListener('click', closeProject1)
 
 // PROJECT 2
 openProject2Modal.addEventListener('click', openProject2)
-
 closeProject2Modal.addEventListener('click', closeProject2)
 
 // PROJECT 3
 
 openProject3Modal.addEventListener('click', openProject3)
-
 closeProject3Modal.addEventListener('click', closeProject3)
+
+window.addEventListener('scroll', scrollButtonFunction) 
+topButton.addEventListener('click', clickToTop)
