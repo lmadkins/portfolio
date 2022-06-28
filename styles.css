@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   max-width: 100vh;
   background-color: #F7F3EF;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -34,7 +34,6 @@ button {
 .tab-link, .project-links {
   border: none;
   padding: 15px 16px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: black;
