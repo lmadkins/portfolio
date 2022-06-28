@@ -82,6 +82,20 @@ a {
   text-decoration: none;
 }
 
+#scroll-button-div {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;  
+  /* border: 1px solid #383838; */
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+#scroll-button {
+  display: none;
+  z-index: 1;
+  transition: .5s;
+}
+
 /* Icons in Entry and Bio */
 .social-links img {
   vertical-align: middle;
