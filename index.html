@@ -30,19 +30,18 @@
   <div id="entry-page"  class="tab-view">
 
     <h1>LOUISE ADKINS</h1>
+    <button class="entry-page-button" id="entry-bio-link" title="Who I Am">Who I Am</button>
     
-    <button class="entry-page-button" id="entry-bio-link">Who I Am</button>
-    
-    <button class="entry-page-button" id="entry-projects-link">Projects</button>
+    <button class="entry-page-button" id="entry-projects-link" title="Projects">Projects</button>
 
-    <div class="social-links"  id="entry-social-links">
-      <a href="https://github.com/lmadkins" target="_blank">
+    <div class="social-links" id="bio-social-links">
+      <a href="/img/github.png" target="_blank" title="GitHub">
         <img src="/img/github.png" alt="Icon of GitHub">
       </a>
-      <a href="https://www.linkedin.com/in/louiseadkins/" target="_blank">
+      <a href="https://www.linkedin.com/in/louiseadkins/" target="_blank" title="LinkedIn">
         <img src="/img/linkedin.png" alt="Icon of LinkedIn">
       </a>
-      <a href="" target="_blank">
+      <a href="mailto:louise.m.adkins@gmail.com" target="_blank" title="Send Email" tabindex="3">
         <img src="img/email-icon.png" alt="Icon of an envelope">
       </a>
     </div>
@@ -55,28 +54,27 @@
   <!-- BIO PAGE -->
   <div id="bio-page" class="tab-view">
     <h1>Louise Adkins</h1>
-    <br>
     <img src="/img/bio-pic-400.png" alt="Image of Louise Adkins">
+    <p>Software engineering and full-stack web development student, born and raised in Portland, OR</p>
     <br>
+    <button id="open-resume" class="modal-button" title="Resume">Resume</button>  
+    <div id="resume-modal" class="modal">
+      <div class="modal-content">
+        <iframe src="/Louise Adkins Resume.pdf"></iframe>
+        <button id="close-resume" class="modal-button" title="Close Resume">Close</button>
+      </div>
+    </div>
     <div class="social-links" id="bio-social-links">
-      <a href="/img/github.png" target="_blank">
+      <a href="/img/github.png" target="_blank" title="GitHub">
         <img src="/img/github.png" alt="Icon of GitHub">
       </a>
-      <a href="https://www.linkedin.com/in/louiseadkins/" target="_blank">
+      <a href="https://www.linkedin.com/in/louiseadkins/" target="_blank" title="LinkedIn">
         <img src="/img/linkedin.png" alt="Icon of LinkedIn">
       </a>
-      <a href="" target="_blank">
+      <a href="mailto:louise.m.adkins@gmail.com" target="_blank" title="Send Email" tabindex="3">
         <img src="img/email-icon.png" alt="Icon of an envelope">
       </a>
     </div>
-  <button id="open-resume" class="modal-button">Resume</button>  
-  <div id="resume-modal" class="modal">
-    <div class="modal-content">
-      <iframe src="/Louise Adkins Resume.pdf"></iframe>
-      <button id="close-resume" class="modal-button">Close modal</button>
-    </div>
-  </div>
-     <p>Cat ipsum dolor sit amet, carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. Ha ha, you're funny i'll kill you last shake treat bag, and dream about hunting birds yet rub butt on table. Then cats take over the world have my breakfast spaghetti yarn. Being gorgeous with belly side up damn that dog . Soft kitty warm kitty little ball of furr sleep everywhere, but not in my bed stare at the wall, play with food and get confused by dust peer out window, chatter at birds.</p>
   </div> 
   <!-- END of BIO PAGE -->
   
@@ -85,86 +83,85 @@
 
   <div id="project-1" class="project-card">
       <h1>Tic-Tac-Toe</h1>
-      <img src="img/tic-tac-toe-img.png" alt="Image of project">
+      <img src="img/tic-tac-toe-img.png" alt="Image of project with the plainly designed grid of a tic-tac-toe game under the title 'Welcome to Tic-Tac-Toe'" title="Image of Project">
       <div class="project-links">
-        <a href="https://git.generalassemb.ly/lmadkins/tic-tac-toe/tree/dev" target="_blank">GitHub</a>
-        <a href="https://codepen.io/louiseee/pen/zYWOXEG" target="_blank">Codepen</a>
+        <a href="https://git.generalassemb.ly/lmadkins/tic-tac-toe/tree/dev" target="_blank" title="GitHub">GitHub</a>
+        <a href="https://codepen.io/louiseee/pen/zYWOXEG" target="_blank" title="Codepen">Codepen</a>
       </div>
-      <!-- <button id="project-expand">Click to expand</button> -->
-      <button id="open-project-1" class="modal-button">Expand</button>
+      <button id="open-project-1" class="modal-button" title="Expand Details">Expand</button>
   </div>
       <!-- PROJECT 1 MODAL -->
       <div id="project-1-modal" class="project-modal">
         <div class="modal-content">
           <h1>Tic-Tac-Toe</h1>
-          <img src="img/tic-tac-toe-img.png" alt="Image of project">
-          <br>
-          <div class="project-links">
-            <a href="https://git.generalassemb.ly/lmadkins/tic-tac-toe/tree/dev" target="_blank">GitHub</a>
-            <a href="https://codepen.io/louiseee/pen/zYWOXEG" target="_blank">Codepen</a>
-          </div>
           <p>The classic game of Tic-Tac-Toe, built from scratch for a class assignment.
             <p>
             Made with Javascript, HTML, and CSS
            </p>
-          <!-- <p>Stretch: More details and description</p>
-          <div>Stretch: More Images</div> -->
-        <button id="close-project-1" class="modal-button">Click to close</button>
+          <img src="img/tic-tac-toe-img.png" alt="Image of project with the plainly designed grid of a tic-tac-toe game under the title 'Welcome to Tic-Tac-Toe'" title="Image of Project">
+          <br>
+          <div class="project-links">
+            <a href="https://git.generalassemb.ly/lmadkins/tic-tac-toe/tree/dev" target="_blank" title="GitHub">GitHub</a>
+            <a href="https://codepen.io/louiseee/pen/zYWOXEG" target="_blank" title="CodePen">Codepen</a>
+          </div>
+        <button id="close-project-1" class="modal-button" title="Close Project">Click to close</button>
       </div>
     </div>
   
   
     <div id="project-2" class="project-card">
-      <h1>Project 2</h1>
-      <img src="https://placeholder.pics/svg/400x400/FFF78A-B5FFBE/Project%20Image" alt="Image of project">
+      <h1>Space Battle</h1>
+      <img src="/img/space-battle-img.png" alt="Image of site, black background with green text reading 'Welcome to Space Battle'">
       <div class="project-links">
-        <a href="" target="_blank">GitHub</a>
-        <br>
-        <a href="" target="_blank">Live View/Codepen</a>
+        <a href="https://git.generalassemb.ly/lmadkins/space-battle" target="_blank"  title="GitHub">GitHub</a>
+        <a href="https://codepen.io/louiseee/pen/ZExzdyR" target="_blank"  title="CodePen">Codepen</a>
       </div>
-      <p>Cat ipsum dolor sit amet, plop down in the middle where everybody walks. Litter kitter kitty litty little kitten big roar roar feed me meow to be let in wake up wander around the house m;aking large amounts of noise jump on top of your human's bed and fall asleep again so purr like an angel.</p>
-      <button id="open-project-2" class="modal-button">Click to expand</button>
+      <button id="open-project-2" class="modal-button" title="Expand Details">Expand</button>
     </div>
       <div id="project-2-modal" class="project-modal">
         <div class="modal-content">
-          <h1>Project 2</h1>
-          <img src=""https://placeholder.pics/svg/400x400/FFCFE8-C8E0FA/Project%20Image"" alt="Image of project">
-          <a href="" target="_blank">GitHub</a>
-          <a href="" target="_blank">Live View/Codepen</a>
-          <p>Cat ipsum dolor sit amet, plop down in the middle where everybody walks. Litter kitter kitty litty little kitten big roar roar feed me meow to be let in wake up wander around the house making large amounts of noise.</p>
-          <p>Stretch: More details and description</p>
-          <div>Stretch: More Images</div>
-          <button id="close-project-2">Click to close</button>
+          <h1>Space Battle</h1>
+          <p>An interactive console game, created from prompt directions for a class assignment.
+            <p>
+            Made with Javascript, HTML, and CSS
+            </p>
+          <img src="/img/space-battle-img.png" alt="Image of site, black background with green text reading 'Welcome to Space Battle'" title="Project image">
+          <div class="project-links">
+            <a href="https://git.generalassemb.ly/lmadkins/space-battle" target="_blank"  title="GitHub">GitHub</a>
+            <a href="https://codepen.io/louiseee/pen/ZExzdyR" target="_blank"  title="CodePen">Codepen</a>
+          </div>
+          <button id="close-project-2" class="modal-button" title="Close Project">Click to close</button>
         </div>
       </div> 
     
   
     <div id="project-3" class="project-card">
-      <h1>Project 3</h1>
-      <img src="https://placeholder.pics/svg/400x400/FFCFE8-C8E0FA/Project%20Image" alt="Image of project">
+      <h1>Javascript PixelArt</h1>
+      <img src="/img/js-pixart-img.png" alt="Image of project showing the text 'Pixel Art!' an input field, a box showing the selected color, and below a pixelated drawing of a heart'" title="Project IMage">
       <div class="project-links">
-        <a href="" target="_blank">GitHub</a>
-        <br>
-        <a href="" target="_blank">Live View/Codepen</a>
+        <a href="https://git.generalassemb.ly/lmadkins/js-pixart-lite/tree/dev" target="_blank"  title="GitHub">GitHub</a>
+        <a href="https://codepen.io/louiseee/pen/NWYKZYv" target="_blank"  title="CodePen">Codepen</a>
       </div>
-      <p>Cat ipsum dolor sit amet, plop down in the middle where everybody walks. Litter kitter kitty litty little kitten big roar roar feed me meow to be let in wake up wander around the house making large amounts of noise.</p>
-      <button id="open-project-3">Click to expand</button>
+      <button id="open-project-3" class="modal-button" title="Expand Details">Expand</button>
     </div>
       <div id="project-3-modal" class="project-modal">
         <div class="modal-content">
-          <h1>Project 3</h1>
-          <img src=""https://placeholder.pics/svg/400x400/FFCIB8-C8E0FA/Project%20Image"" alt="Image of project">
-          <a href="">GitHub</a>
-          <a href="">Live View/Codepen</a>
-          <p>Cat ipsum dolor sit amet, plop down in the middle where everybody walks. Litter kitter kitty litty little kitten big roar roar feed me meow to be let in wake up wander around the house making large amounts of noise.</p>
-          <p>Stretch: More details and description</p>
-          <div>Stretch: More Images</div>
-          <button id="close-project-3">Click to close</button>
+          <h1>Javascript Pixel Art</h1>
+          <p>Javascript painting app for pixelated doodling using the color of your choice.
+            <p>
+            Made with Javascript
+            <br>(Instructions and most of HTML and CSS from General Assembly.)
+          </p>
+          <img src="/img/js-pixart-img.png" alt="Image of project showing the text 'Pixel Art!' an input field, a box showing the selected color, and below a pixelated drawing of a heart'" title="Project Image">
+          <div class="project-links">
+            <a href="https://git.generalassemb.ly/lmadkins/js-pixart-lite/tree/dev" target="_blank"  title="GitHub">GitHub</a>
+            <a href="https://codepen.io/louiseee/pen/ZExzdyR" target="_blank"  title="CodePen">Codepen</a>
+          </div>
+          <button id="close-project-3" class="modal-button" title="Close Project">Click to close</button>
         </div>
       </div>
     
   </div>
-  
   <!-- END of PROJECT PAGE -->
 </main>
 </body>
