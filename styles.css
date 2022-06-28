@@ -5,6 +5,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 54px;
+  letter-spacing: 1px;
+}
+
+/* Button and Link styles */
+
 nav {
   width: 100%;
   max-height: 50px;
@@ -41,42 +51,38 @@ button {
   transition: 0.3s;
 }
 
+.project-links a {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid gray;
+  background-color: rgb(255, 254, 254);
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1)
+}
+
 button:hover, .project-links a:hover {
   transition: .5s;
   background-color: #383838;
   color: #F4F4F4;
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 54px;
-  letter-spacing: 1px;
+.modal-button {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: auto;
+  background-color: #FFF;
 }
 
+/* (Removing default link styles) */
 a {
   border: none;
   color: #383838;
   text-decoration: none;
 }
 
-.tab-view {
-  top: 50px;
-  /* border: 2px solid gray; */
-  text-align: center;
-  /* adjust these with media queries later */
-  max-width: 90vw;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.tab-view img {
-  max-width: 80vw;
-  margin: 10px auto;
-}
-
-/* Img/Linkss in Entry and Bio */
+/* Icons in Entry and Bio */
 .social-links img {
   vertical-align: middle;
   padding: 5px;
@@ -86,35 +92,43 @@ a {
   transform: scale(1.1);
 }
 
-/* ENTRY PAGE */
+/* Divs for each 'view' - entry, bio, projects */
+.tab-view {
+  top: 50px;
+  text-align: center;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 100px;
+}
 
+/* Images in Bio and Projects*/
+.tab-view img {
+  max-width: 80vw;
+  margin: 10px auto;
+}
+
+/* ENTRY PAGE */
 .entry-page-button {
   display: block;
   margin: 20px auto;
 }
 
 /* BIO PAGE SPECIFIC */
-
 #bio-page {
   max-width: 500px;
-  /* margin: 20px auto;
-  border-radius: 4px;
-  border: 1px solid black;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1); */
 }
 
 #bio-page img {
   border-radius: 3px;
   max-width: 300px;
-
 }
 
 #bio-page img:hover {
   opacity: .96;
 }
 
-
 /* MODALS */
+/* Resume modal */
 .modal, .project-modal {
   display: none;
   position: fixed;
@@ -133,8 +147,8 @@ a {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
   border: none;
+  text-align: center;
   font-size: 18px;
   background-color: #F7F3EF;
   opacity: .98;
@@ -142,14 +156,6 @@ a {
 
 #resume-modal .modal-content {
   background-color: #34373A;
-}
-
-.modal-button {
-  border: 1px solid black;
-  border-radius: 3px;
-  margin: auto;
-  background-color: #FFF;
-
 }
 
 iframe {
@@ -161,36 +167,21 @@ iframe {
 }
 
 /* PROJECTS PAGE */
+/* Individual divs for each project */
 .project-card {
+  min-height: 80vh;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 5px;
   border-radius: 4px;
   border: 1px solid black;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  margin: 40px auto;
-  min-height: 80vh;
-  max-width: 500px;
   text-align: center;
-}
-
-.project-links a {
-  display: inline-block;
-  margin: 5px;
-  border: 1px solid gray;
-  background-color: rgb(255, 254, 254);
-  border-radius: 3px;
-  padding: 7px;
-  font-size: 14px;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1)
 }
 
 .project-card img, .project-modal img {
   border: 4px solid #383838;
   border-radius: 2px;
-}
-
-.project-card p {
-  max-width: 500px;
-  margin: 20px auto;
 }
 
 /* PROJECT MODAL */
@@ -211,21 +202,15 @@ iframe {
   font-size: 36px;
 }
 
+.project-card p {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* Project Links styles in Button/Link section near top */
+
 /* DISPLAY NONES AND HIDE CLASS */
-
-#tab-nav {
-  display: none;
-}
-
-#entry-page {
-  display: none;
-}
-
-#bio-page {
-  display: none;
-}
-
-#project-page {
+#tab-nav, #entry-page, #bio-page, #project-page {
   display: none;
 }
 
@@ -233,12 +218,19 @@ iframe {
   display: none;
 }
 
+/* Mobile screen size queries */
 @media only screen and (max-width: 480px) {
- nav {
+  nav {
   max-height: 20vh;
   padding: 10px;
   background-color: rgb(56, 56, 56)
- }
+  }
+
+  h1 {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
   .tab-link {
     width: 30%;
     min-height: 100%;
@@ -247,28 +239,19 @@ iframe {
     font-size: 12px;
     background-color: #383838;
     color: #F4F4F4;
-    
   }
 
   .tab-link:hover {
     background-color: #ebebeb;
     color: black;
   }
-
-  h1 {
-    font-size: 40px;
-    margin: 0 auto;
-  }
-
   #bio-page {
     max-width: 95vh;
     margin-top: 12vh;
-  
   }
   #bio-page img {
     max-width: 200px;
     margin-top: 10px;
-    /* transition: 0.3s; */
   }
 
   #bio-social-links {
@@ -282,4 +265,5 @@ iframe {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
   }
 
+  /*  End of max-480px media query */
 }
