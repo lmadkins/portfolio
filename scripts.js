@@ -99,7 +99,7 @@ const topButton = document.getElementById('top-button')
 ////////////////////////////////
 // FUNCTIONS
 const loadEntry = function () {
-  // tabNav.style.display = 'none'
+  tabNav.style.display = 'none'
   entryPage.style.display = 'block'
   bioPage.style.display = 'none'
   projectPage.style.display = 'none'
