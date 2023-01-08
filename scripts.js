@@ -46,6 +46,13 @@ const openProject3Modal = document.getElementById('open-project-3')
 
 const closeProject3Modal = document.getElementById('close-project-3')
 
+//PROJECT 4
+const project4Modal = document.getElementById('project-4-modal')
+
+const openProject4Modal = document.getElementById('open-project-4')
+j
+const closeProject4Modal = document.getElementById('close-project-4')
+
 // PROJECT 1 MODAL FUNCTIONS
 const openProject1 = () => {
   project1Modal.style.display = 'block'
@@ -70,6 +77,15 @@ const openProject3 = () => {
 
 const closeProject3 = () => {
   project3Modal.style.display = 'none'
+}
+
+//PROJECT 4 MODAL FUNCTIONS
+const openProject4 = () => {
+  project4Modal.style.display = 'block'
+}
+
+const closeProject4 = () => {
+  project4Modal.style.display = 'none'
 }
 
 ////////////////////////////////
