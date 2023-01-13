@@ -1,59 +1,28 @@
 window.onload = () => loadEntry()
 
+////////////////////////////////
 // RESUME MODAL
-const resumeModal = document.getElementById('resume-modal')
+const resumeModal = document.querySelector('#resume-modal')
 
-//open button
-const openResume = document.getElementById('open-resume')
-
-// close button
-const closeResume = document.getElementById('close-resume')
-
-// RESUME MODAL FUNCTIONS
-// function to open button and change CSS property from display none to display block
 const openResumeModal = () => {
   resumeModal.style.display = 'block'
 }
-// function to close button and change CSS property from display block to display none
 const closeResumeModal = () => {
   resumeModal.style.display = 'none'
 }
+
+//open button event
+document.querySelector('#open-resume').onclick = openResumeModal
+
+// close button event
+document.querySelector('#close-resume').onclick = closeResumeModal
 
 ////////////////////////////////
 // PROJECT MODALS
 
 //PROJECT 1
-const project1Modal = document.getElementById('project-1-modal')
+const project1Modal = document.querySelector('#project-1-modal')
 
-//open button
-const openProject1Modal = document.getElementById('open-project-1')
-
-//close button
-const closeProject1Modal = document.getElementById('close-project-1')
-
-//PROJECT 2
-const project2Modal = document.getElementById('project-2-modal')
-
-const openProject2Modal = document.getElementById('open-project-2')
-
-const closeProject2Modal = document.getElementById('close-project-2')
-
-
-//PROJECT 3
-const project3Modal = document.getElementById('project-3-modal')
-
-const openProject3Modal = document.getElementById('open-project-3')
-
-const closeProject3Modal = document.getElementById('close-project-3')
-
-//PROJECT 4
-const project4Modal = document.getElementById('project-4-modal')
-
-const openProject4Modal = document.getElementById('open-project-4')
-j
-const closeProject4Modal = document.getElementById('close-project-4')
-
-// PROJECT 1 MODAL FUNCTIONS
 const openProject1 = () => {
   project1Modal.style.display = 'block'
 }
@@ -61,7 +30,16 @@ const closeProject1 = () => {
   project1Modal.style.display = 'none'
 }
 
-//PROJECT 2 MODAL FUNCTIONS
+//open button event
+document.querySelector('#open-project-1').onclick = openProject1
+
+//close button event
+document.querySelector('#close-project-1').onclick = closeProject1
+
+
+// PROJECT 2
+const project2Modal = document.querySelector('#project-2-modal')
+
 const openProject2 = () => {
   project2Modal.style.display = 'block'
 }
@@ -70,7 +48,13 @@ const closeProject2 = () => {
   project2Modal.style.display = 'none'
 }
 
-//PROJECT 3 MODAL FUNCTIONS
+document.querySelector('#open-project-2').onclick = openProject2
+
+document.querySelector('#close-project-2').onclick = closeProject2
+
+// PROJECT 3
+const project3Modal = document.querySelector('#project-3-modal')
+
 const openProject3 = () => {
   project3Modal.style.display = 'block'
 }
@@ -78,6 +62,14 @@ const openProject3 = () => {
 const closeProject3 = () => {
   project3Modal.style.display = 'none'
 }
+
+document.querySelector('#open-project-3').onclick = openProject3
+
+document.querySelector('#close-project-3').onclick = closeProject3 
+
+
+// PROJECT 4
+const project4Modal = document.querySelector('#project-4-modal')
 
 //PROJECT 4 MODAL FUNCTIONS
 const openProject4 = () => {
@@ -87,6 +79,10 @@ const openProject4 = () => {
 const closeProject4 = () => {
   project4Modal.style.display = 'none'
 }
+document.querySelector('#open-project-4').onclick = openProject4
+
+document.querySelector('#close-project-4').onclick = closeProject4
+
 
 ////////////////////////////////
 // const entryPage = document.querySelector('#entry-page')
@@ -173,28 +169,6 @@ navProjects.addEventListener('click', () => {
 navEntry.addEventListener('click', () => {
   loadEntry()
 })
-
-
-
-// RESUME MODAL EVENT LISTENERS
-openResume.addEventListener('click', openResumeModal)
-closeResume.addEventListener('click', closeResumeModal)
-
-
-// PROJECT MODAL EVENT LISTENERS
-
-// PROJECT 1
-openProject1Modal.addEventListener('click', openProject1)
-closeProject1Modal.addEventListener('click', closeProject1)
-
-// PROJECT 2
-openProject2Modal.addEventListener('click', openProject2)
-closeProject2Modal.addEventListener('click', closeProject2)
-
-// PROJECT 3
-
-openProject3Modal.addEventListener('click', openProject3)
-closeProject3Modal.addEventListener('click', closeProject3)
 
 window.addEventListener('scroll', scrollButtonFunction) 
 topButton.addEventListener('click', clickToTop)
