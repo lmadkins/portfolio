@@ -73,92 +73,92 @@ document.querySelector('#open-project-4').onclick = openProject4
 
 document.querySelector('#close-project-4').onclick = closeProject4
 
-
 ////////////////////////////////
- const entryPage = document.querySelector('#entry-page')
-// const entryPage = document.getElementById('entry-page')
 
-//NAVIGATION and TABS
+const entryPage = document.querySelector('#entry-page')
+
 const tabNav = document.querySelector('#tab-nav')
-// const tabViews = document.querySelectorAll('.tab-view')
+
 const bioPage = document.querySelector('#bio-page')
-// const bioPage = document.getElementById('bio-page')
-const projectPage = document.getElementById('project-page')
 
-//NAV LINKS
-const navBio = document.querySelector('#nav-bio-link')
-const navProjects = document.querySelector('#nav-projects-link')
-const navEntry = document.querySelector('#nav-entry-link')
+const projectPage = document.querySelector('#project-page')
 
-// ENTRY BUTTON LINKS
-const entryBio = document.querySelector('#entry-bio-link')
-
-const entryProjects = document.querySelector('#entry-projects-link')
-
-// SCROLL TO TOP BUTTON
-const topButton = document.getElementById('top-button')
+const topButton = document.querySelector('#top-button')
 
 ////////////////////////////////
-// FUNCTIONS
+
+
+const hideEl = (element) => {
+  element.style.display = 'none'
+}
+
+const showEl = (element) => {
+  element.style.display = 'block'
+}
+
+// pages/views
 const loadEntry = function () {
-  tabNav.style.display = 'none'
-  entryPage.style.display = 'block'
-  bioPage.style.display = 'none'
-  projectPage.style.display = 'none'
+  hideEl(tabNav)
+  hideEl(bioPage)
+  hideEl(projectPage)
+  showEl(entryPage)
 }
 
 const loadBio = function () {
-  tabNav.style.display = 'block'
-  entryPage.style.display = 'none'
-  bioPage.style.display = 'block'
-  projectPage.style.display = 'none'
+  hideEl(entryPage)
+  hideEl(projectPage)
+  showEl(tabNav)
+  showEl(bioPage)
 }
 
 const loadProjects = function () {
-  tabNav.style.display = 'block'
-  entryPage.style.display = 'none'
-  bioPage.style.display = 'none'
-  projectPage.style.display = 'block'
+  hideEl(topButton)
+  hideEl(entryPage)
+  hideEl(bioPage)
+  showEl(tabNav)
+  showEl(projectPage)
 }
 
-// SCROLL TO TOP BUTTON
-function scrollButtonFunction() {
-  if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
-    topButton.style.display = "block"
+// scroll to top
+function showScroll() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    showEl(topButton)
   }  else {
-    topButton.style.display = "none"
+    hideEl(topButton)
   }
 }
 
-// scroll to the top of the button when clicked
 function clickToTop () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
 ////////////////////////////////
-// ENTRY EVENT LISTENERS
-entryBio.addEventListener('click', () => {
-  loadBio()
-})
+// entry links
+document.querySelector('#entry-bio-link').addEventListener('click', () => {
+    loadBio()
+  })
 
-entryProjects.addEventListener('click', () => {
+document.querySelector('#entry-projects-link').addEventListener('click',() => {
   loadProjects()
 })
 
-// NAV EVENT LISTENERS
+// nav links
 
-navBio.addEventListener('click', () => {
+document.querySelector('#nav-bio-link').addEventListener('click', () => {
   loadBio()
 })
 
-navProjects.addEventListener('click', () => {
+document.querySelector('#nav-projects-link').addEventListener('click', () => {
   loadProjects()
 })
 
-navEntry.addEventListener('click', () => {
+document.querySelector('#nav-entry-link').addEventListener('click', () => {
   loadEntry()
 })
 
-window.addEventListener('scroll', scrollButtonFunction) 
+////////////////////////////////
+// scroll to top
+
+window.addEventListener('scroll', showScroll) 
 topButton.addEventListener('click', clickToTop)

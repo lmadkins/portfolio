@@ -3,7 +3,6 @@ body {
   max-width: 100vh;
   background-color: #F7F3EF;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 h1 {
@@ -108,7 +107,7 @@ a {
 }
 
 /* Divs for each 'view' - entry, bio, projects */
-.tab-view {
+.tab-view, .entry-content {
   top: 50px;
   text-align: center;
   max-width: 90vw;
